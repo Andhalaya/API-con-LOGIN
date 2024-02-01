@@ -2,7 +2,7 @@ const express = require('express');
 const {generateToken, verifyToken} = require('../middlewares/authMiddleware');
 const users = require('../data/users')
 const router = express.Router();
-const axios = require('axios');
+const axios = require('axios')
 
 router.get('/', (req, res) => {
     if(req.session.token) {
